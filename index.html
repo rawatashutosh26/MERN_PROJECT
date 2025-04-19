@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My MERN Project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the MERN Project!</h1>
-    <p>Follow the steps below to run the project locally:</p>
-    <button onclick="startFrontend()">Start Frontend</button>
-    <button onclick="startBackend()">Start Backend</button>
+    <div class="container">
+        <header>
+            <h1>Welcome to My MERN Project</h1>
+            <p>Follow the steps below to run the project locally on your machine.</p>
+        </header>
+
+        <section class="instructions">
+            <div class="card">
+                <h2>Run Frontend</h2>
+                <p>To start the frontend, navigate to the <strong>frontend</strong> directory in your terminal and run the following command:</p>
+                <code>npm run dev</code>
+                <button onclick="startFrontend()">Start Frontend</button>
+            </div>
+
+            <div class="card">
+                <h2>Run Backend</h2>
+                <p>To start the backend, navigate to the <strong>backend</strong> directory and run:</p>
+                <code>npm run dev</code>
+                <button onclick="startBackend()">Start Backend</button>
+            </div>
+        </section>
+
+        <!-- <footer>
+            <p>Need help? Check the <a href="https://github.com/rawatashutosh26/MERN_PROJECT" target="_blank">GitHub Repository</a> for more details.</p>
+        </footer> -->
+    </div>
 
     <script>
         function startFrontend() {
